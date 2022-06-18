@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap');
+
+::selection {
+    background-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-color: #eee;
+    color: #2196f3;
+    min-height: 5000px;
+    width: 100%;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+}
+.nav-0 {
+    display: flex;
+}
+.nav-0 .logo {
+    padding: 2.5px;
+    margin: 22px;
+    margin-top: 30px;
+    background-color: #2196f3;
+    color: #fff;
+    text-transform: lowercase;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor : default;
+}
+.nav-0 .search {
+    margin: 20px 0;
+}
+.nav-0 .search input {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    transition-duration: 0.1s;
+    border: #22222232 1px solid;
+}
+.nav-0 .search input:focus {
+    outline: none;
+    width: 500px;
+    box-shadow: 0 0 8px 2px #00000017;
+}
+.nav-1 ul {
+    margin: 20px 0;
+}
+.nav-1 ul li {
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+    color: #2196f3;
+    position: relative;
+}
+.nav-1 ul li::before {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #2196f3;
+    transition-duration: 0.1s;
+    border-radius: 5px;
+}
+.body {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.nav-1 ul li:hover::before {
+    width: 100%
+}
+.left-section {
+    width: 25%;
+    height: 70vh;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left-section .logo-left-section {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: default;
+    color: #2196f3;
+}
+.left-section section {
+    margin: 10px;
+    padding: 10px;
+    color: #2196f3;
+    font-weight: bold;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+.left-section section:hover {
+    background-color: #2196f3;
+    color: #eee;
+    border-radius: 10px;
+}
+.posts-and-storys {
+    width: 50%;
+    height: 100vh;
+}
+.right-section {
+    width: 25%;
+    height: 70vh;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+.right-section section {
+    margin: 10px;
+    padding: 10px;
+    color: #2196f3;
+    font-weight: bold;
+    direction: left;
+    text-align: center;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+.right-section section:hover {
+    background-color: #2196f3;
+    color: #eee;
+    border-radius: 10px;
+}
+.right-section .account {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.right-section .account img {
+    width: 70px;
+    height: 70px;
+}
+.right-section .name-account {
+    text-align: center;
+    margin: 5px 0;
+    color: #2196f3;
+    cursor: pointer;
+}
+.body .posts-and-storys .storys {
+    width: 95%;
+    height: 200px;
+    background-color: #ddd;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.body .posts-and-storys .storys .story {
+    width: 120px;
+    margin: 10px;
+    height: 180px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: none;
+    position: relative;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border: #028dff 1px solid;
+}
+.body .posts-and-storys .storys .story:hover {
+    box-shadow: 0 0 8px 2px #00000054;
+}
+.body .posts-and-storys .storys .story::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: #eee;
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+    z-index: 5;
+    background-image: url("elements/images/user/user.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: #2196f3 3px solid;
+}
+.body .posts-and-storys .storys .story img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+}
+.my-post {
+    width: 90%;
+    padding: 10px;
+    background-color: #ddd;
+    margin: 10px auto;
+    border-radius: 5px;
+    position: relative;
+}
+.my-post .head {
+    display: flex;
+    flex-flow: row wrap;
+    height: 69px;
+}
+.my-post .head div {
+    margin: 0 10px;
+}
+.my-post .person {
+    width: 50px;
+    height: 50px;
+    background-image: url("elements/images/user/user.png");
+    background-size: cover;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+.my-post .person-name {
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+    color: #2196f3;
+}
+.body {
+    margin: 20px;
+    line-height: 25px;
+    color: #222;
+}
+.img-post {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.box-react {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.box-react div {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #0e4979;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.box-react div::selection {
+    background-color: transparent;
+}
+.changeColor {
+    color: #028dff !important
+}
+.dark {
+    background-color: #222 !important
+}
+.semi-dark {
+    background-color: #333 !important
+}
+.white {
+    color: #fff !important
+}
+
+.nav-bar {
+    margin: 30px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav-1 {
+    display: none;
+
+}
+.show {
+    display: block !important;
+    text-align: center;
+}
+.for-nav-bar {
+    background-color: #028dff;
+    overflow: hidden;
+    animation-name: NavBar;
+    animation-duration: 0.4s;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.scroll {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: #028dff solid 1px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    color: #028dff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    z-index: 999;
+}
+.scroll:hover {
+    background-color: #028dff;
+    color: #fff;
+}
+@keyframes NavBar {
+    from {
+        height: 0;
+    }
+    to {
+        height: 435px;
+
+    }
+}
+
+.for-nav-bar ul li {
+    color: #ddd;
+    padding: 10px;
+    display: block;
+}
+.for-nav-bar ul li:hover {
+    background-color: #eee;
+    color: #028dff;
+    border-radius: 10px;
+}
+@media screen and (max-width : 850px) and (min-width : 575px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .posts-and-storys {
+        width: 100%;
+    }
+    .nav-0 .search input {
+        width: 400px;
+        }
+        .nav-0 .search input:focus {
+        width: 500px;
+        }
+}
+@media screen and (max-width : 575px) and (min-width : 471px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .posts-and-storys {
+        width: 100%;
+    }
+    .nav-0 .search input {
+    width: 200px;
+    }
+    .nav-0 .search input:focus {
+    width: 300px;
+    }
+
+.body .posts-and-storys .storys .story {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.body .posts-and-storys .storys {
+    height: auto;
+}
+.body .posts-and-storys .storys .story::before {
+    display: none;
+}
+.body .posts-and-storys .storys .story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.box-react div {
+    margin: 5px;
+}
+}
+
+@media screen and (max-width : 471px) and (min-width : 371px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .posts-and-storys {
+        width: 100%;
+    }
+    .nav-0 .search input {
+    width: 100px;
+    }
+    .nav-0 .search input:focus {
+    width: 200px;
+    }
+
+.body .posts-and-storys .storys .story {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.body .posts-and-storys .storys {
+    height: auto;
+}
+.body .posts-and-storys .storys .story::before {
+    display: none;
+}
+.body .posts-and-storys .storys .story img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.box-react div {
+    margin: 5px;
+}
+}
+@media screen and (max-width : 372px) and (min-width : 284px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .posts-and-storys {
+        width: 100%;
+    }
+    .nav-0 .search input {
+    width: 80px;
+    }
+    .nav-0 .search input:focus {
+    width: 100px;
+    }
+
+.body .posts-and-storys .storys .story {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.body .posts-and-storys .storys {
+    height: auto;
+}
+.body .posts-and-storys .storys .story::before {
+    display: none;
+}
+.body .posts-and-storys .storys .story img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.box-react div {
+    margin: 5px;
+}
+.head .person {
+    width: 40px;
+    height: 40px;
+}
+.head .person-name {
+    font-size: 10px;
+    position: relative;
+    top: 20px;
+}
+.body {
+    font-size: 10px;
+}
+}
+@media screen and (max-width : 284px) and (min-width: 251px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        display: none;
+    }
+    .posts-and-storys {
+        width: 100%;
+    }
+    .nav-0 .search input {
+    display: none;
+    }
+.body .posts-and-storys .storys .story {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.body .posts-and-storys .storys {
+    height: auto;
+}
+.body .posts-and-storys .storys .story::before {
+    display: none;
+}
+.body .posts-and-storys .storys .story img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.box-react div {
+    margin: 0px;
+}
+.box-react {
+    height: 40px;
+}
+.head .person {
+    width: 40px;
+    height: 40px;
+}
+.head .person-name {
+    font-size: 10px;
+    position: relative;
+    top: 20px;
+}
+.body {
+    font-size: 10px;
+}
+}

@@ -1,0 +1,360 @@
+::selection {
+    background-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #ddd;
+}
+.contanier {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+}
+.contanier .box {
+    width: 80%;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 3px #00000030;
+}
+.contanier .box .logo .letter-logo {
+    display: inline-block;
+    padding: 10px;
+    background-color: #2196f3;
+    margin: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    height: 15px;
+    width: 15px;
+}
+.contanier .box .logo {
+    position: absolute;
+    cursor: default;
+}
+.contanier .box .logo .word-logo {
+    display: inline-block;
+    font-weight: bold;
+    color: #2196f3;
+    font-size: 15px;
+}
+.contanier .box .sign {
+    display: flex;
+}
+.contanier .box .sign .login {
+    width: 100%;
+    height: 450px;
+}
+.contanier .box .sign .box-login {
+    width: 50%;
+    margin: 100px auto;
+    padding: 10px;
+    text-align: center;
+}
+.contanier .box .sign .box-login h3 {
+    margin: 10px 0;
+    cursor: default;
+}
+.contanier .box .sign .box-login h4 {
+    margin: 10px 0;
+    cursor: default;
+}
+.contanier .box .sign .box-login div {
+    margin: 10px 0;
+}
+.contanier .box .sign .box-login .title-login {
+    color: #2196f3;
+    font-size: 25px;
+}
+.contanier .box .sign .box-login .line {
+    width: 30px;
+    height: 3px;
+    background-color: #2196f3;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+.contanier .box .sign .box-login .email .name {
+    display: flex;
+    justify-content: flex-start;
+}
+.contanier .box .sign .box-login .email .name input {
+    width: 100%;
+    margin: 0 10px;
+    padding: 10px;
+}
+.contanier .box .sign .box-login .email input {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    margin: 5px 0;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #2222224d;
+}
+.contanier .box .sign .box-login .email input::selection {
+    background-color: #2196f3;
+    color: #fff;
+}
+.contanier .box .sign .box-login .email input:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+}
+.contanier .box .sign .box-login .password input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #2222224d;
+}
+.contanier .box .sign .box-login .password input[type="password"]::selection {
+    background-color: #2196f3;
+    color: #fff;
+}
+.contanier .box .sign .box-login .password input:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+}
+.contanier .box .sign .box-login .remember-me {
+    text-align: left;
+    margin: 10px;
+    font-size: 12px;
+}
+.contanier .box .sign .box-login .remember-me label {
+    position: relative;
+    bottom: 2px;
+}
+.contanier .box .sign .login .box-login .password .btn {
+    display: flex;
+    justify-content: center;
+}
+.contanier .box .sign .login .box-login .password .btn button {
+    display: block;
+    padding: 10px 30px;
+    border: 1px solid #2196f3;
+    background-color: transparent;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.contanier .box .sign .login .box-login .password .btn button:hover {
+    border: transparent;
+    background-color: #2196f3;
+    color: #fff;
+    
+}
+@media screen and (max-width : 984px) and (min-width: 944px) {
+    .contanier .box .sign .box-login .title-login {
+        font-size: 20px;
+    }
+.contanier .box .sign .sign-in .letter-logo {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .welcome {
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .paragraph {
+    font-size: 12px;
+}
+.contanier .box .sign .sign-in .sign-up-page a {
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width : 943px) and (min-width : 788px) {
+    .contanier .box .sign .box-login .title-login {
+        font-size: 20px;
+    }
+.contanier .box .sign .sign-in .letter-logo {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .welcome {
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .paragraph {
+    font-size: 12px;
+}
+.contanier .box .sign .sign-in .sign-up-page a {
+    font-size: 12px;
+}
+
+}
+
+@media screen and (max-width : 788px) and (min-width : 715px) {
+    .contanier .box .sign .box-login .title-login {
+        font-size: 15px;
+    }
+.contanier .box .sign .sign-in .letter-logo {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .welcome {
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .paragraph {
+    font-size: 12px;
+}
+.contanier .box .sign .sign-in .sign-up-page a {
+    font-size: 12px;
+}
+.contanier .box .sign .login .box-login .password button {
+    padding: 10px 30px;
+}
+}
+
+@media screen and (max-width : 715px) and (min-width : 604px) {
+    .contanier .box .sign .box-login .title-login {
+        font-size: 15px;
+    }
+.contanier .box .sign .sign-in .letter-logo {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.contanier .box .sign .sign-in .welcome {
+    font-size: 15px;
+}
+.contanier .box .sign .sign-in .paragraph {
+    font-size: 10px;
+}
+.contanier .box .sign .sign-in .sign-up-page a {
+    font-size: 12px;
+}
+.contanier .box .sign .login .box-login .password button {
+    padding: 6px 20px;
+}
+}
+
+@media screen and (max-width : 604px) and (min-width : 493px) {
+    .contanier .box .sign .sign-in {
+        display: none;
+    }
+    .contanier .box .sign .login {
+        width: 100%;
+    }
+    .contanier .box .sign .login .box-login .password .btn {
+        justify-content: center;
+    }
+    .contanier .box .sign .login .box-login .password .btn .signIn-btn {
+        display: block;
+        padding: 6px 20px;
+    }
+    .contanier .box .sign .box-login .email .name {
+        flex-flow: column wrap;
+    }
+    .contanier .box .sign .box-login .email .name  input {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width : 493px) and (min-width : 394px) {
+    .contanier .box .sign .sign-in {
+        display: none;
+    }
+    .contanier .box .sign .login {
+        width: 100%;
+    }
+    .contanier .box .sign .box-login .title-login {
+    font-size: 20px;
+    }
+    .contanier .box .sign .login .box-login .password .btn {
+        justify-content: center;
+    }
+    .contanier .box .sign .login .box-login .password .btn .signIn-btn {
+        display: block;
+        padding: 6px 20px;
+    }
+    .contanier .box .sign .box-login .email .name {
+        flex-flow: column wrap;
+    }
+    .contanier .box .sign .box-login .email .name  input {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
+@media screen and (max-width : 394px) and (min-width : 296px) {
+    .contanier .box .sign .sign-in {
+        display: none;
+    }
+    .contanier .box .sign .box-login {
+        height: 475px;
+    }
+    .contanier .box .sign .login {
+        width: 100%;
+    }
+    .contanier .box .sign .box-login .title-login {
+        font-size: 15px;
+    }
+    .contanier .box .sign .box-login .email input {
+        font-size: 10px;
+    }
+    .contanier .box .sign .box-login .password input[type="password"] {
+        font-size: 10px;
+    }
+    .contanier .box .sign .login .box-login .password button {
+        padding: 6px 10px;
+    }
+    .contanier .box .sign .login .box-login .password .btn {
+        justify-content: center;
+    }
+    .contanier .box .sign .box-login .email .name {
+        flex-flow: column wrap;
+    }
+    .contanier .box .sign .box-login .email .name  input {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width : 296px) {
+    .contanier .box .sign .login {
+        width: 100%;
+    }
+    .contanier .box .sign .box-login {
+        height: 475px;
+    }
+    .contanier .box .sign .box-login .title-login {
+        font-size: 10px;
+    }
+    .contanier .box .sign .box-login .email input {
+        font-size: 8px;
+    }
+    .contanier .box .sign .box-login .password input[type="password"] {
+        font-size: 8px;
+    }
+    .contanier .box .sign .login .box-login .password button {
+        padding: 4px 8px;
+    }
+    .contanier .box .sign .box-login .remember-me {
+        font-size: 10px;
+    }
+    .contanier .box .sign .login .box-login .password .btn {
+        justify-content: center;
+    }
+    .contanier .box .sign .login .box-login .password .btn .signIn-btn {
+        display: block;
+        padding: 6px 20px;
+    }
+    .contanier .box .sign .box-login .email .name {
+        flex-flow: column wrap;
+    }
+    .contanier .box .sign .box-login .email .name  input {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
